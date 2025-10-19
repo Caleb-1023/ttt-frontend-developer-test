@@ -113,7 +113,7 @@ function ValueItem({
 
 export default function ValuesSection() {
   return (
-    <section id="product" className="max-w-6xl mx-auto px-6 py-40 space-y-30">
+    <section id="product" className="max-w-6xl mx-auto px-6 py-40 lg:my-30 space-y-30">
       {/* <ValueItem
         custom={<CustomOne />}
         imageSrc="/value-1.png"

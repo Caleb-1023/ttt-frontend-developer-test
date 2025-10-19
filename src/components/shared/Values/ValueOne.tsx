@@ -28,7 +28,7 @@ export const ValueOne = () => {
   }, []);
 
   return (
-    <div className={`flex flex-col lg:flex-row items-center gap-34 `}>
+    <div className={`lg:pb-30 flex flex-col lg:flex-row items-center gap-34 `}>
       {/* Images area */}
       <div
         ref={containerRef}

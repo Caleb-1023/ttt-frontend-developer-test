@@ -10,7 +10,7 @@ export default function ServicesSection() {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 md:gap-25">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 lg:gap-25">
         <ServiceItem title="Cool feature title" imageSrc="/service-1.png" />
         <ServiceItem title="Even cooler feature" imageSrc="/service-2.png" />
         <ServiceItem title="Cool feature title" imageSrc="/service-3.png" />
