@@ -20,8 +20,8 @@ export default function StartNow() {
         />
 
         <div className="relative px-8 py-10 text-center text-white z-10">
-          <h2 className="text-4xl mdtext-5xl mb-12 leading-10 md:leading-18">
-            An enterprise template to ramp <br />up your company website
+          <h2 className="text-4xl md:text-5xl mb-12 leading-10 md:leading-18">
+            An enterprise template to ramp <br className="hidden lg:block" />up your company website
           </h2>
 
           <div className="flex flex-col lg:flex-row items-center justify-center gap-4">

@@ -1,7 +1,5 @@
 "use client";
 import Image from "next/image";
-import CustomOne from "./CustomOne";
-import CustomTwo from "./CustomTwo";
 import { ReactNode, useEffect, useRef, useState } from "react";
 import { ValueOne } from "./ValueOne";
 import { ValueTwo } from "./ValueTwo";
@@ -63,7 +61,6 @@ function ValueItem({
 					@keyframes slideFadeLeft { from { opacity: 0; transform: translateX(-24px) } to { opacity: 1; transform: translateX(0) } }
 				`}</style>
 
-        {/* <div className="rounded-lg overflow-hidden w-64 h-64 md:w-100 md:h-100"> */}
         <Image
           src={imageSrc}
           alt={title}
@@ -88,9 +85,6 @@ function ValueItem({
               : { opacity: 0, transform: "translateX(-24px)" }
           }
         >
-          {/* <div className="text-xs text-gray-500">30%</div>
-					<div className="text-sm font-semibold">More income in June</div> */}
-
           <Image
             src={smallImageSrc}
             alt={title}
@@ -113,24 +107,12 @@ function ValueItem({
 
 export default function ValuesSection() {
   return (
-    <section id="product" className="max-w-6xl mx-auto px-6 py-40 lg:my-30 space-y-30">
-      {/* <ValueItem
-        custom={<CustomOne />}
-        imageSrc="/value-1.png"
-        smallImageSrc="/value11.png"
-        description="We connect our customers with the best, and help them keep up-and stay open."
-      /> */}
-
+    <section
+      id="product"
+      className="max-w-6xl mx-auto px-6 py-40 lg:my-30 space-y-30"
+    >
       <ValueOne />
       <ValueTwo />
-
-      {/* <ValueItem
-        reverse
-        custom={<CustomTwo />}
-        imageSrc="/value-2.png"
-        smallImageSrc="/value22.png"
-        description="We connect our customers with the best, and help them keep up-and stay open."
-      /> */}
     </section>
   );
 }

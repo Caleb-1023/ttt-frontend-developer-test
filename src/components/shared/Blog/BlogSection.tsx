@@ -1,14 +1,13 @@
+import SectionHeader from "../SectionHeader";
 import BlogItem from "./BlogItem";
 
 export default function BlogSection() {
   return (
     <section className="max-w-6xl mx-auto px-6 py-10">
-      <div className="text-center mb-19">
-        <p className="mb-3 text-lg text-gray-400">Our Blog</p>
-        <h2 className="text-3xl sm:text-5xl">
-          Value proposition accelerator product management venture
-        </h2>
-      </div>
+      <SectionHeader
+        title="Our Blogs"
+        subtitle="Value proposition accelerator product management venture"
+      />
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
         <BlogItem
