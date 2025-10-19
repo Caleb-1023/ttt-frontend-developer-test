@@ -9,13 +9,13 @@ import {
 
 const FaqSection = () => {
   return (
-    <div className="px-40 py-30 space-y-14">
+    <div className="px-5 md:px-40 py-10 md:py-30 space-y-14">
       <div className="relative h-0 min-h-[400px] w-full">
         <Image src={"/faq.png"} alt="" fill className="object-cover rounded-3xl" />
       </div>
 
-      <div className="flex items-start justify-between gap-25">
-        <p className="basis-1/2 text-4xl text-black leading-14">
+      <div className="flex flex-col md:flex-row items-start justify-between gap-10 md:gap-25">
+        <p className="basis-1/2 text-2xl md:text-4xl text-black leading-7 md:leading-14">
           We connect our customers with the best, and help them keep up-and stay
           open.
         </p>
@@ -24,7 +24,6 @@ const FaqSection = () => {
             type="single"
             collapsible
             className="w-full space-y-8"
-            defaultValue="item-1"
           >
             <AccordionItem value="item-1">
               <AccordionTrigger className="text-xl">

@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="md:w-1/3">
             <Link href="/" className="block mb-10">
               <Image
-                src="/logo-2.png"
+                src="/logo-2.svg"
                 alt="Boldo Logo"
                 width={160}
                 height={40}
@@ -23,6 +23,7 @@ export default function Footer() {
             </p>
 
             <p className="text-xs text-[#777777]">All rights reserved.</p>
+            <p className="text-xs text-[#777777]">Signed Caleb Okpaheifufue</p>
           </div>
 
           {/* Right: Link groups */}

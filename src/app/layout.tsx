@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Open_Sans, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import BackToTopButton from "@/components/shared/BackToTop";
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
@@ -24,7 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${openSans.variable} font-sans antialiased`}>{children}</body>
+      <body className={`${openSans.variable} font-sans antialiased`}>{children}
+        <BackToTopButton />
+      </body>
     </html>
   );
 }

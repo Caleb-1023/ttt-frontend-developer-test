@@ -38,7 +38,7 @@ export default function BlogSection() {
       </div>
 
       <div className="mt-21 flex justify-center">
-        <button className="px-14 py-4 rounded-full border-2 border-[#0A2640] text-xl font-bold">
+        <button className="px-14 py-4 rounded-full border-2 border-[#0A2640] text-xl font-bold hover:bg-[#0A2640] hover:text-white transition duration-300">
           Load more
         </button>
       </div>

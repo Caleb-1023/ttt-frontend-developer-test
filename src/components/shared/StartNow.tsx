@@ -6,7 +6,7 @@ export default function StartNow() {
   const [email, setEmail] = useState("");
 
   return (
-    <section className="w-full max-w-8xl mx-auto px-25 flex justify-center py-21">
+    <section className="w-full max-w-8xl mx-auto px-5 md:px-25 flex justify-center py-21">
       <div
         className="relative w-full py-18 rounded-2xl overflow-hidden"
         style={{ backgroundColor: "#0A2640" }}
@@ -20,7 +20,7 @@ export default function StartNow() {
         />
 
         <div className="relative px-8 py-10 text-center text-white z-10">
-          <h2 className="text-3xl sm:text-5xl mb-12 leading-18">
+          <h2 className="text-4xl mdtext-5xl mb-12 leading-10 md:leading-18">
             An enterprise template to ramp <br />up your company website
           </h2>
 

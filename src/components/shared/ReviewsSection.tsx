@@ -31,7 +31,9 @@ function ReviewItem({
             className="rounded-full"
           />
           <div>
-            <div className="mb-1.5 text-sm text-[#0A2640] font-bold">{name}</div>
+            <div className="mb-1.5 text-sm text-[#0A2640] font-bold">
+              {name}
+            </div>
             <div className="text-sm text-[#0A2640]">{title}</div>
           </div>
         </div>
@@ -69,19 +71,23 @@ export default function ReviewsSection() {
   ];
 
   return (
-    <Carousel className="py-20" style={{ backgroundColor: "#0B3250" }}>
+    <Carousel
+      id="about"
+      className="py-10 md:py-20"
+      style={{ backgroundColor: "#0B3250" }}
+    >
       <div className="max-w-6xl mx-auto px-6 text-white">
-        <div className="flex items-end justify-between mb-8">
+        <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-5 mb-18">
           <div>
-            <h2 className="text-5xl leading-18">
-              An enterprise template to ramp <br />
+            <h2 className="text-3xl md:text-5xl leading-9 md:leading-18">
+              An enterprise template to ramp <br className="hidden md:block" />
               up your company website
             </h2>
           </div>
 
-          <div className="flex items-center gap4">
-            <CarouselPrevious className="relative text-[#0A2640] size-16" />
-            <CarouselNext className="relative text-[#0A2640] size-16" />
+          <div className="flex items-center justify-start gap-3 md:gap-7">
+            <CarouselPrevious className="md:w-18 md:h-18 relative text-[#0A2640] top-0 left-0 translate-none" />
+            <CarouselNext className="md:w-18 md:h-18 relative text-[#0A2640] top-0 left-0 translate-none" />
           </div>
         </div>
 

@@ -19,7 +19,7 @@ export default function ServiceItem({
           alt={title}
           width={300}
           height={350}
-          className="object-cover w-full"
+          className="objectcover w-full"
         />
       </div>
 
@@ -28,8 +28,8 @@ export default function ServiceItem({
     <p className="text-[#777777]">{description}</p>
 
       <div className="mt-4">
-        <button className="pb-2 text-sm text-[#0A2640] font-bold inline-flex items-center gap-2 border-b border-[#0A2640]">
-          Explore page <span aria-hidden>→</span>
+        <button className="pb-2 text-[#0A2640] font-bold inline-flex items-center gap-2 border-b border-[#0A2640]">
+          Explore page <Image src="/explore-a.svg" alt="" width={24} height={24} />
         </button>
       </div>
     </article>
