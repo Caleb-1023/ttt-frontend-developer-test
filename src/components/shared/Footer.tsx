@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-white text-[#777777]">
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-12">
+        <div className="flex flex-col lg:flex-row md:items-start md:justify-between gap-12">
           {/* Left: Logo + description */}
           <div className="md:w-1/3">
             <Link href="/" className="block mb-10">
@@ -18,8 +18,10 @@ export default function Footer() {
             </Link>
 
             <p className=" text-gray-500 leading-relaxed mb-8">
-              Social media validation business model <br /> canvas graphical
-              user interface launch <br /> party creative facebook iPad twitter.
+              Social media validation business model{" "}
+              <br className="md:hidden lg:block" /> canvas graphical user
+              interface launch <br className="md:hidden lg:block" /> party
+              creative facebook iPad twitter.
             </p>
 
             <p className="text-xs text-[#777777]">All rights reserved.</p>

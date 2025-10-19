@@ -80,7 +80,7 @@ export default function ReviewsSection() {
         <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-5 mb-18">
           <div>
             <h2 className="text-3xl md:text-5xl leading-9 md:leading-18">
-              An enterprise template to ramp <br className="hidden md:block" />
+              An enterprise template to ramp <br className="hidden lg:block" />
               up your company website
             </h2>
           </div>

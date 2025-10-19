@@ -24,7 +24,7 @@ export default function StartNow() {
             An enterprise template to ramp <br />up your company website
           </h2>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-4">
             <input
               type="email"
               placeholder="Your email address"

@@ -16,7 +16,7 @@ const Hero = () => {
         className="absolute top-0 right-0 z-0"
       />
 
-      <div className="relative w-full h-full px-5 md:px-25 flex flex-col-reverse md:flex-row items-center justify-between z-10">
+      <div className="relative w-full h-full px-5 md:px-25 flex flex-col-reverse lg:flex-row items-center justify-between z-10">
         <div className="basis-1/2">
           <h1 className="text-3xl md:text-5xl md:leading-18 mb-4">
             Save time by building fast with Boldo Template{" "}

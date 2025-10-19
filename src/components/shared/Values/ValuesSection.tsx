@@ -3,6 +3,8 @@ import Image from "next/image";
 import CustomOne from "./CustomOne";
 import CustomTwo from "./CustomTwo";
 import { ReactNode, useEffect, useRef, useState } from "react";
+import { ValueOne } from "./ValueOne";
+import { ValueTwo } from "./ValueTwo";
 
 type ValueItemProps = {
   title?: string;
@@ -62,18 +64,18 @@ function ValueItem({
 				`}</style>
 
         {/* <div className="rounded-lg overflow-hidden w-64 h-64 md:w-100 md:h-100"> */}
-          <Image
-            src={imageSrc}
-            alt={title}
-            width={450}
-            height={530}
-            className="object-cover"
-            style={
-              inView
-                ? { animation: "fadeIn 600ms ease forwards" }
-                : { opacity: 0 }
-            }
-          />
+        <Image
+          src={imageSrc}
+          alt={title}
+          width={450}
+          height={530}
+          className="object-cover"
+          style={
+            inView
+              ? { animation: "fadeIn 600ms ease forwards" }
+              : { opacity: 0 }
+          }
+        />
         {/* </div> */}
 
         <div
@@ -102,7 +104,7 @@ function ValueItem({
       {/* Details area */}
       <div className="md:w-1/2 w-full">
         <p className="mb-10 text-black text-4xl leading-14">{description}</p>
-        
+
         {custom}
       </div>
     </div>
@@ -112,20 +114,23 @@ function ValueItem({
 export default function ValuesSection() {
   return (
     <section id="product" className="max-w-6xl mx-auto px-6 py-40 space-y-30">
-      <ValueItem
+      {/* <ValueItem
         custom={<CustomOne />}
         imageSrc="/value-1.png"
         smallImageSrc="/value11.png"
         description="We connect our customers with the best, and help them keep up-and stay open."
-      />
+      /> */}
 
-      <ValueItem
+      <ValueOne />
+      <ValueTwo />
+
+      {/* <ValueItem
         reverse
         custom={<CustomTwo />}
         imageSrc="/value-2.png"
         smallImageSrc="/value22.png"
         description="We connect our customers with the best, and help them keep up-and stay open."
-      />
+      /> */}
     </section>
   );
 }
