@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #0a2640;
+  --secondary-color: #65e4a3;
+  --gray-color: #777777;
+  --light-gray-color: #c4c4c4;
+}
+
+body {
+  font-family: var(--font-secondary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+}
+
+h1 {
+  @apply text-[2.5rem] leading-[3rem]; /* Tailwind classes for larger font */
+}
+h2 {
+  @apply text-[2rem] leading-[2.5rem];
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media (min-width: 640px) {
+  h1 {
+    @apply text-h1;
+  }
+
+  h2 {
+    @apply text-h2;
+  }
+
+  h3 {
+    @apply text-h3;
+  }
+
+  h4 {
+    @apply text-h4;
+  }
+
+  h5 {
+    @apply text-h5;
+  }
+
+  h6 {
+    @apply text-h6;
+  }
+
+  p {
+    @apply text-p;
+  }
+}
+
+section {
+  overflow-x: hidden;
+}
